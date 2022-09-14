@@ -1,6 +1,5 @@
 {
   "name": "masaniello-mm-ui",
-  "proxy": "http://localhost:8887",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

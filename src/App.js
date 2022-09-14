@@ -47,7 +47,7 @@ function App() {
       console.log(request);
       try {
 
-        const response = await axios.post('http://localhost:8887/api/masaniello/nextentry', request);//axios.post('https://money-mgr-app.herokuapp.com/api/masaniello/nextentry', request);
+        const response = await axios.post('https://money-mgr-app.herokuapp.com/api/masaniello/nextentry', request);//axios.post('http://localhost:8887/api/masaniello/nextentry', request);
         console.log(response.data);
         setError("");
         setNextEntry(response.data.nextentry_value);
