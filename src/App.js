@@ -35,7 +35,6 @@ function App() {
   const debouncedReloadValues = useRef(
     debounce(async (capital, max_entries, max_wins, payout, results) => {
       setLoading(true);
-      console.log("Results: " + results);
       const request = {
         capital: parseFloat(capital),
         total_ops: parseInt(max_entries),
@@ -44,11 +43,9 @@ function App() {
         type_management: "normal",
         previous_results: results
       };
-      console.log(request);
       try {
 
         const response = await axios.post('https://money-mgr-app.herokuapp.com/api/masaniello/nextentry', request);//axios.post('http://localhost:8887/api/masaniello/nextentry', request);
-        console.log(response.data);
         setError("");
         setNextEntry(response.data.nextentry_value);
         setExpectedResult(response.data.expectedReturn);
