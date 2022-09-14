@@ -1,33 +1,85 @@
+/*
 .App {
   text-align: center;
 }
+*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar {
+  background-color: #0C2144;
 }
-
+main{
+  background-color: #071125;
+  flex: 1;
+  padding-top: 1rem;
+}
+.main-box {
+  background-color: #0C2144;
+  width: 100%;
+  min-height: 30vh;
+  box-shadow: rgba(22,72,143, 0.35) 0px 5px 30px;
+  border-radius: 5px;
+}
+.main-box h3 {
+  color: #ffc107;
+}
+.form-card {
+  background-color: #16488F;
+}
+.form-card label {
+  color: white;
+}
+.form-card input[type="number"] {
+  background-color: #0C2144;
+  color: white;
+}
+.form-card input[type="text"] {
+  background-color: #0C2144;
+  color: white;
+}
+.next-value-strip {
+  background-color: #0B1F65;
+}
+.site-container {
+  min-height: 100vh;
+}
+.pos-calculator {
+  flex: 1;
+}
+footer{
+  background-color: #0B1F65;
+  color: #ffffff;
+}
+.results-table th{
+  color: #ffffff;
+}
+.results-table td {
+  color: #ffc107;
+}
+/* Validation */
+.validation-error {
+  border-color: #ff0000 !important;
+}
+.validation-text {
+  color: #ff0000;
+}
+/* Warning */
+.warning {
+  color:#ffc107;
+  font-size: smaller;
+}
+.warning > span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+/* Disclaimers */
+.disclaimer {
+  color: #dc3545;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
